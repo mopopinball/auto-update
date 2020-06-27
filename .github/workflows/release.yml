@@ -20,3 +20,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: npx semantic-release
+      - name: Login
+          run: npm login --registry=https://npm.pkg.github.com/
+      - name: Publish
+          run: npm publish

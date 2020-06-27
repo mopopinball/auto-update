@@ -2,8 +2,8 @@
   "name": "auto-update",
   "version": "1.0.1",
   "description": "",
+  "publishConfig": { "registry": "https://npm.pkg.github.com/" },
   "main": "index.js",
-  "private": true,
   "scripts": {
     "test": "mocha"
   },
